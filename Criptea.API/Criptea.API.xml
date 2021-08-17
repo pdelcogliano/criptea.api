@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Criptea.API</name>
+    </assembly>
+    <members>
+        <member name="M:Criptea.API.Controllers.PBKDF2HashController.HashText(Criptea.API.Requests.HashTextRequest)">
+            <summary>
+            hashes a string 
+            </summary>
+            <param name="request">an instance of HashToTextRequest</param>
+            <remarks>
+            Sample request:
+            
+                POST api/v1/hashText
+                    {
+                        "hashIterations": "100",
+                        "textToHash": "This is a test",
+                        "saltSize": "34"
+                    }
+            </remarks>
+            <response code="201">Success - text hashed</response>
+            <response code="400">Invalid request</response>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
